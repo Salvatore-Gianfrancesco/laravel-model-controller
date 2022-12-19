@@ -1,1 +1,36 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+img {
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+}
+
+.card {
+    .card-top {
+        p {
+            height: 365px;
+            display: none;
+            overflow-y: auto;
+        }
+
+        img {
+            height: 365px;
+        }
+    }
+
+    i {
+        color: #ffb500;
+    }
+
+    &:hover {
+        .card-top p {
+            display: block;
+        }
+    }
+
+    &:hover .card-top img {
+        display: none;
+    }
+
+
+}
